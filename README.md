@@ -17,9 +17,7 @@ The 4x implementation still has issues.
 
 Engine-side works great. Add the files from the resource "engine" directory into the equivalent local project folders and add the .cpp/.h files to the project and it should build.<br>
 
-Script-side currently does not work great (resources using long established Torque script-side structure simply refuse to execute in 4x).<br>
-
-For down-and-dirty testing, I've been dropping the "consoleDoc/" folder directly into the root "game/" directory. The script-side system is then launced with:<br>
+Script-side currently does not work great. For down-and-dirty testing, I've been dropping the "consoleDoc/" folder directly into the root "game/" directory. The script-side system is then launced with:<br>
 ``` exec("./consoleDoc/consoleDoc.tscript"); ```
 
 From there, all the SysDoc object manipulation and templating functions work well. The Method Export GUI has missing resources and is not currently fully functional.
