@@ -3,7 +3,7 @@ Extended script object documentation engine for Torque3d
 
 Updated classes for interacting with and documenting the fields and methods of SimObject derived object types defined in a game.
 
-For a basic overviewof the project and some very basic documentation, see here: https://kb-games.github.io/TSConsoleDoc/
+For a basic overview of the project and some very basic documentation, see here: https://kb-games.github.io/TSConsoleDoc/
 
 ### Installation 3x: 
 Drop the "game" and "engine" folders into the relevant locations within a local game setup. Add the .cpp/.h files to the project, and everything should work. <br>
