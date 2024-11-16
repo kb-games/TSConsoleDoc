@@ -3,14 +3,14 @@ Extended script object documentation engine for Torque3d
 
 Updated classes for interacting with and documenting the fields and methods of SimObject derived object types defined in a game.
 
-For more info see here: https://kb-games.github.io/TSConsoleDoc/
+For a basic overviewof the project and some very basic documentation, see here: https://kb-games.github.io/TSConsoleDoc/
 
 ### Installation 3x: 
-Drop the "game" and "engine" folders into the relevant locations within a local game setup. Add the .cpp/.h files in the "engine" subfolders to the project, and everything should work. <br>
+Drop the "game" and "engine" folders into the relevant locations within a local game setup. Add the .cpp/.h files to the project, and everything should work. <br>
 
-The only modification to core game files is adding a line to execute the consoleDoc system in " ./tools/main.cs". So this should be a drop-in resource for any Torque implementation that has not modified this file.<br>
+The only modification to core game files adds a line to execute the consoleDoc system in " ./tools/main.cs". so it should work as a drop-in resource for any Torque implementation that has not modified this file.<br>
 
-This was tested in T3D 3.10 with a clean install, but it should work as a drop-in resource with much earlier versions.<br>
+The resource is tested in T3D 3.10 (clean build), but it should work as a drop-in resource for much earlier versions as well.<br>
 
 ### Installation 4x:
 The 4x implementation still has issues. 
