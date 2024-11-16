@@ -1,0 +1,33 @@
+body * {
+	font-family:arial;font-size:16pt;
+}
+div {
+	padding:5px;
+	margin:5px;
+}
+code {
+	background-color:#afd;
+	padding:15px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.nlink{
+	display:inline-block;
+}
+.picbox {
+	display:inline-block;
+}
+.box {
+	display:inline-block;
+}
+
+.nlink{
+	display:inline-block;
+}
+.box2 {
+	width:750px;
+	vertical-align:top;
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+}

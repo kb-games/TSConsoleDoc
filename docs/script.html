@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+<body>
+<div style="max-width:1000px;margin-left:auto;margin-right:auto;">
+	<div style="text-align:center;">
+		<div style="font-size:150%">TS Console Object Documentation Classes</div>
+		<div style="font-size:120%">TSDoc Script Objects</div>
+	</div>
+	<div>
+		TSDoc functionality is exposed to script via the SysDoc family of classes. This is accomplished through four main script classes.
+
+	</div>
+	<div style="width=100%">
+		<div class="box2" style="">
+			<div style="" onclick="window.location='sysdoc.html';" ><b><a href="sysdoc.html">SysDocObject</a></b>: Utility/factory class for working with the family of SysDoc classes. Acts as a general documentation class loader, templating utility factory, etc.</div>
+			<div style="" onclick="window.location='sysdocclass.html';"><b><a href="sysdocclass.html">SysDocClass</a></b>: Class-level documentation object. Typically the objects representing fields and methods will be interacted with through this class.</div>
+			<div style="" onclick="window.location='sysdocfield.html';"><b><a href="sysdocfield.html">SysDocField</a></b>: Field-level documentation object .</div>
+			<div style="" onclick="window.location='sysdocmethod.html';"><b><a href="sysdocmethod.html">SysDocMethod</a></b>: Method-level documentation object</div>
+		</div>
+	</div>
+	<div>
+		<div style="text-align:center;">
+		<div style="font-size:115%;font-weight:bold">$SysDoc Global Documenting Engine</div>
+		</div>
+		<div>On game launch, consoleDoc.tscript creates a global SysDocObject called SysDoc (with global $SysDoc). This object serves as a general documentation class utility factory.</div>
+		<div>.</div>
+	</div>	
+	<div>
+		<div style="text-align:center;">
+		<div style="font-size:115%;font-weight:bold">SysDocClass Class</div>
+		</div>
+		<div>The SysDocClass object provides all the available information about an object's class. A SysDocClass object can be generated from any object in a game using:</div>
+		<div style="text-align:center;margin:20px;"><code style="">myDClassObj = SysDoc.getDocClass(Object,FilterParents);</code></div>
+		<div style="margin-top:15px;"></div>
+	</div>
+	<div>
+		<div style="text-align:center;">
+		<div style="font-size:115%;font-weight:bold">ClassDoc SimGroup Structure</div>
+		</div>
+		<div>A full class documentation structure can be manifest in script with the ClassDoc SimGroup structure, returned by:</div>
+		<div style="text-align:center;margin:20px;"><code style="">myDClassStruct = SysDocClass.getClassDoc();</code></div>
+		<div style="margin-top:15px;">This simgroup holds class fields along with child simgroups with field and method objects.</div>
+	</div>		
+		
+	</div>	
+
+	<div style="text-align:center;">
+		<div class="nlink"><a href="engine.html">&lt;&lt; Engine Classes</a></div>
+		<div class="nlink"><a href="index.html">Index</a></div>
+		<div class="nlink"><a href="templates.html">Template Overview &gt;&gt;</a></div>
+	</div>
+</div>
+</body>

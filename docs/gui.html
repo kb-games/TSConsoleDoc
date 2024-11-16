@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+<body>
+<div style="max-width:1000px;margin-left:auto;margin-right:auto;">
+	<div style="text-align:center;">
+		<div style="font-size:150%">Object Method Explorer/Script Export GUI</div>
+		<div style="font-size:120%">SysDoc demo implementation</div>
+	</div>
+	<div style="text-align:center;">
+		<img src="images/GUI_datablock_full2.jpg">
+	</div>	
+	<div>
+	The Object Method Explorer/Script Export GUI allows exploring class console methods defined for an object and exporting selected methods to a script file. Methods can be viewed by inheritance level and methods can be exported for either the selected object or the parent base class.
+	</div>	
+	<div>
+	Clicking on an item from the list will bring up the method prototype and full usage documentation in the information pane. Usage documentation is parsed from properly formatted meta-data defined in the engine code.
+	</div>
+	<div style="width:100%;text-align:center;"><hr style="width:60%;color:#eee;"></div>
+	<div >
+		<div class="picbox" style="margin-left:75px;">
+			<img src="images/GUI_db_sel.jpg">
+		</div>
+		<div class="picbox" style="width:500px;vertical-align:top;">
+			For GameObject derivatives with a datablock, the GUI can switch between datablock and object methods.
+		</div>		
+	</div>	
+	<div>
+	Note: It is possible to select methods defined on the datablock for export in combination with methods defined on the object.
+	</div>
+	<div style="border:1px solid #ddd;">
+		<div>
+			<img src="images/GUI_subclass_sel.jpg">
+		</div>	
+		<div>
+			<div class="picbox">
+				<img src="images/GUI_sel_list.jpg">
+			</div>
+			<div class="picbox" style="width:450px;vertical-align:top;margin-top:10px;">
+				Selecting an inheritance level will show only methods defined in the selected ancestor class.<br><br>Selecting the "view all" checkbox will display all console methods defined for the object/datablock.
+			</div>
+		</div>
+	</div>
+	<div style="text-align:center;">
+		<div style="font-size:110%;font-weight:bold">Exporting</div>
+	</div>	
+	<div >
+		<div class="picbox" style="margin-left:50px;">
+			<img src="images/GUI_export.jpg">
+		</div>
+		<div class="picbox" style="width:500px;vertical-align:top;">
+			<div>Clicking on the export checkbox will select a method for exporting.</div>
+			<div>Entries selected for export will be highlighted with an (*) in the object list.</div>
+		</div>		
+	</div>	
+	<div style="width:100%;text-align:center;"><hr style="width:60%;color:#eee;"></div>	
+	<div>
+		<div class="picbox" style="margin-left:50px;">
+			<img src="images/GUI_export_show.jpg">
+		</div>		
+		<div class="picbox" style="width:400px;vertical-align:top;margin-top:25px;">			
+			<div>Once all desired methods are selected, the export list can be reviewed by clicking on the "Show Export Methods" button.</div>
+			<div>Note: to get back to normal list functionality, click on the "View All" checkbox.</div>
+		</div>
+	</div>
+	<div style="width:100%;text-align:center;"><hr style="width:60%;color:#eee;"></div>	
+	
+	<div>
+		<div class="picbox" style="margin-left:25px;margin-top:25px;">
+			<img style="width:455px;" src="images/GUI_export_options.jpg">
+		</div>		
+		<div class="picbox" style="width:450px;vertical-align:top;margin-top:15px;">			
+			<div>The export options section contains options to set up export parameters.</div>
+			<div>Clicking the "export" button will bring up a file selector and export all selected methods.</div>			
+		</div>
+	</div>	
+	
+	<div style="width:100%;text-align:center;">
+	<table border>
+		<tr>
+			<td>
+				Documentation Comments:
+			</td>
+			<td>
+				Determines the level of comments output to script.<br><br>
+				Options:None, Brief, Full
+			</td>
+		</tr><tr>			
+			<td>
+				Export Methods For Class:
+			</td>
+			<td>
+				Allows outputting methods for parent class.<br><br>
+				In this example, checked would output methods scoped to <b>WheeledVehicle</b> and <b>WheeledVechicleData</b> and unchecked would scope output methods to <b>car</b> and <b>TgeBuggyCar</b>.
+			</td>			
+		</tr><tr>			
+			<td>
+				Append to File:
+			</td>
+			<td>
+				Append exported classes to existing file, otherwise file will be overwritten.<br><br>
+				This allows exporting both parent and object methods to the same file with multiple saves.
+			</td>			
+		</tr>
+	</table>
+	</div>
+
+	<div style="text-align:center;margin-top:25px;">
+		<div style="font-size:110%;font-weight:bold">How to Launch GUI</div>
+	</div>
+	<div>
+		<div>To use the GUI, the engine must be compiled with the TSDoc/SysDoc resource files, and the resource script files need to integrated following directions for the desired T3D version.</div>
+		<div>The command to display the GUI is:</div>		
+		<div style="text-align:center;margin:20px;"><code style="">ClassMethodExport.showDlg(consoleObject);</code></div>
+		<div style="margin-top:15px;">Assuming everything installed correctly, this should launch the GUI focused on the selected object.</div>		
+	</div>
+	<div style="text-align:center;">
+		<div class="nlink"><a href="templates.html">&lt;&lt; Template Overview</a></div>
+		<div class="nlink"><a href="index.html">Index</a></div>
+		<!-- <div class="nlink"><a href="gui.html">Export GUI &gt;&gt;</a></div> -->
+	</div>	
+</div>

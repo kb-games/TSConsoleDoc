@@ -1,0 +1,51 @@
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+<body>
+<div style="max-width:1000px;margin-left:auto;margin-right:auto;">
+	<div style="text-align:center;">
+		<div style="font-size:150%">TS Console Object Documentation Classes</div>
+		<div style="font-size:120%">TSDoc Engine Objects</div>
+	</div>
+	<div>
+		Structured data is focused around a top-level TSDocClass container object. This class holds structures to access field and method definitions along with assoicated inline documentation.  
+	</div>
+	<div >
+		<div class="box" style="margin:0px;padding:0px;">
+			<img src="images/ConsoleDocClass_visualization.png">
+		</div>
+		<div class="box" style="width:350px;vertical-align:top;margin:0px;">
+			<div style=""><b>TSDocFieldset</b>: Container object to access lists of TSDocField objects.</div>
+			<div style=""><b>TSDocField</b>: Object holding information about a TS class field.</div>
+			<div style=""><b>TSDocMethodSet</b>: Container object to access lists of TSDocMethod objects.</div>
+			<div style=""><b>TSDocMethod</b>: Object holding information about a TS class method.</div>
+			<div style=""><b>TSDocArgSet</b>: Container object to access lists of TSDocArg objects.</div>
+			<div style=""><b>TSDocArg</b>: Object holding information about a TS class method argument.</div>
+		</div>
+	</div>
+	<div>Each of these classes has a script counterpart exposed throught the SysDoc classes.</div>
+	<div>
+		<div style="text-align:center;">
+		<div style="font-size:115%;font-weight:bold">TSDocClassSet Class</div>
+		</div>
+		<div>The TSDocClassSet class can build lists of TSDocClass objects and perform group operations. Namely, applying templates. This class is internal and not exposed directly through the SysDoc console classes.</div>
+	</div>	
+	<div>
+		<div style="text-align:center;">
+		<div style="font-size:115%;font-weight:bold">Usage Documentation</div>
+		</div>
+		<div>Usage documentation is handled through a universal TSDocUsage class. Each class within the TSDocClass structure points to it's own TSDocUsage object that should store related documentation if properly formatted documentation for that element is provided in code comments. </div>
+	</div>
+	<div>
+		<div style="text-align:center;">
+		<div style="font-size:115%;font-weight:bold">TSDocTemplate Class</div>
+		</div>
+		<div>The TSDocTemplate class holds formatting strings for building structured output. A TSDocTemplate object has fields to format every TSDoc class and is passed by container objects to children during the applyTemplate() process.</div>
+	</div>	
+	<div style="text-align:center;">
+		<div class="nlink"><a href="overview.html">&lt;&lt; Overview</a></div>
+		<div class="nlink"><a href="index.html">Index</a></div>
+		<div class="nlink"><a href="script.html">Script Classes &gt;&gt;</a></div>
+	</div>
+</div>
+</body>

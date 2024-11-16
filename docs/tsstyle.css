@@ -1,0 +1,141 @@
+/*
+.row1
+.tsclass
+#tsclass_classblock
+#tsclass_name
+#tsclass_group
+#tsclass_namespace
+#tsclass_package
+#tsclass_file
+#tsclass_lineno
+#tsclass_isscript
+#tsclass_usageblock
+.row2
+#fielddset_block
+#methodset_block
+#tsclass_ubrief
+#tsclass_udesc
+#tsclass_ufull
+.tsclassset
+
+.tsfield
+#tsfield_head
+#tsfield_name
+#tsfield_type
+#tsfield_body
+#tsfield_fields
+#tsfield_group
+#tsfield_isdynamic
+#tsfield_isarray
+#tsfield_issub
+#tsfield_usage
+#tsfield_usageblock
+#tsfield_ubrief
+#tsfield_udesc
+#tsfield_ufull
+.tsfieldset
+
+.tsmethod
+#tsmethod_head
+#tsmethod_proto
+#tsmethod_body
+#tsmethod_fields
+#tsmethod_name
+#tsmethod_rettype
+#tsmethod_group
+#tsmethod_baseclass
+#tsmethod_namespace
+#tsmethod_package
+#tsmethod_argmin
+#tsmethod_isscript
+#tsmethod_isarray
+#tsmethod_isvirtual
+#tsmethod_iscallback
+#tsmethod_usage
+#tsmethod_argset
+
+#tsmethod_usageblock
+#tsmethod_udesc
+#tsmethod_ubrief
+#tsmethod_ufull
+.tsmethodset
+.tsarg_row
+.tsarg_hrow
+.tsargset
+
+*/
+.tsclass{
+	max-width:1120px;
+}
+.dcell {
+	display:inline-block;
+	border:1px solid;
+	width:550px;
+	vertical-align:top;
+	margin:0px;
+	padding:4px;
+}
+
+.row2, .row1 {
+	width:100%;
+	vertical-align:top;
+}
+
+.ddata {
+	display: inline-block;
+	width:415px;	
+	border-bottom: 1px dotted #aaa;
+}
+.dlabel {
+	display: inline-block;
+	font-weight: bold;
+	width:120px;
+	text-align:right;
+	margin-right:5px;
+	vertical-align:top;
+}
+
+.blockhead{
+	text-align:center;
+	font-weight: bold;
+	font-size: 140%;
+}
+#tsclass_classblock, #tsclass_usageblock{
+	border:none;
+}
+
+.row1{
+	border:1px solid;	
+}
+
+
+#tsclass_name{
+	font-weight: bold;
+	font-size:160%;
+}
+
+#tsfield_name, #tsmethod_proto{
+	font-weight: bold;
+	font-size:120%;	
+}
+
+#tsmethod, .tsfield{
+	border-bottom: 1px dotted;
+	padding-bottom: 3px;	
+}
+#tsmethod_name{
+	display: none;
+}
+
+.tsargset {
+/*	text-align: center; */
+}
+
+.tsargset_table {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.tsargset_table td {
+	border: 1px solid #ccc;	
+}

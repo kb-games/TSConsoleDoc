@@ -1,33 +1,38 @@
+<link rel="stylesheet" href="styles.css">
 <style>
-body * {
-	font-family:arial;font-size:16pt;
-}
-div {
-	padding:5px;
-	margin:5px;
-}
 </style>
 <body>
-<div style="max-width:1000px">
-<div style="text-align:center;">
-  <div style="font-size:150%">Console Documentation Classes</div>
-  <div style="font-size:120%">Overview</div>
-</div>
-  <div style="">
-    The primary objective is to represent the information generated through the consoleDoc.cpp output functions in an accessible (portable) internal structure. The objects provide flexible access to field and method definitions along with associated usage/documentation. They provide a templated output mechanism that can generate arbitrary documentation based on an object class structure (e.g. JSON data, TorqueScript function prototype, etc.).
-  </div>
-  <div>
-    Originally the project was conceived to ba a more flexible approach generating structured data for export to third-party tools. After some discussions, the feature set expanded to fully expose the structured data classes to script for general use in-game (primarily in the context of editors).  
-  </div>
-  <div>
-    The project creates two families of C++ objects: the TSDoc[Type] family, and the SysDoc[Type]Doc family. The latter exposes TSDoc[..] objects to the console.    
-  </div>
-  <h4>Engine Objects</h4>
-  <div>
-    The TSDoc[.] objects are envisioned to be application agnostic for use in both Torque and third-party applications that consume Torque object definitions (code editors, etc). As a transport mechanism, TSDoc[.] objects work within Torque to export console class definition data in JSON which third-party applications can inflate into local TSDoc[.] objects with detailed Torquescript definitions. As a TorqueScript utility, TSDoc[.] objects are exposed via the SysDoc[.] object interface for use/extension through in-game scripting. 
-  </div><div>
-    Structured data is focused around a top-level TSDocClass container object. This class holds structures to access field and method definitions along with assoicated inline documentation.  
-  </div>
-  <div><img src="images/ConsoleDocClass_visualization.png"></div>
+<div style="max-width:1000px;margin-left:auto;margin-right:auto;">
+	<div style="text-align:center;">
+		<div style="font-size:150%">TS Console Object Documentation Classes</div>
+		<div style="">		System to access and export TS object definitions.	</div>
+		<br>
+		<div style="font-size:120%">Info Files / Documentation</div>
+		<div style="margin:15px;">
+		<table style="margin-left:auto;margin-right:auto;">
+		<tr>
+			<td style="width:250px"><div><a href="overview.html">Project Overview</a></div></td>
+			<td>Description of the project scope, core design ideas, and basic functionality.</td>
+		</tr>
+		<tr>
+			<td><div><a href="engine.html">TSDoc Engine Class Notes</a></div></td>
+			<td>Description of the core TSDoc classes and functionality.</td>
+		</tr>
+		<tr>
+			<td><div><a href="script.html">SysDoc and Script Classes</a></div></td>
+			<td>Documentation of the SysDoc classes and exposed script objects.</td>
+		</tr>
+		<tr>
+			<td><div><a href="templates.html">Templating Overview</a></div></td>
+			<td>Explanation of how templates interact with the SysDoc objects.</td>
+		</tr>
+		<tr>
+			<td><div><a href="gui.html">Object Export GUI</a></div></td>
+			<td>A proof of concept GUI for browsing class methods of in-game objects and exporting selected methods as torquescript.</td>
+		</tr>
+		</table>
+		</div>
+		<div style="text-align:center;font-size:110%;margin-top:75px;"><a style="font-size:110%;" href="https://github.com/kb-games/TSConsoleDoc">GitHub repo main page.</a></div>		
+	</div>	
 </div>
 </body>

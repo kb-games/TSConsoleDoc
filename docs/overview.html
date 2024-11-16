@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="styles.css">
+<style>
+</style>
+<body>
+<div style="max-width:1000px;margin-left:auto;margin-right:auto;">
+	<div style="text-align:center;">
+		<div style="font-size:150%">TS Console Object Documentation Classes</div>
+		<div style="font-size:120%">Overview</div>
+	</div>
+	<div style="">
+		The primary objective is to represent object definition dumps output by consoleDoc.cpp and SimObject::dump() in an accessible internal structure that would also be portable. The objects provide flexible access to field and method definitions along with associated usage/documentation. A templated output mechanism can also generate arbitrary text documentation based on an object class structure (e.g. JSON data, TorqueScript function prototype, etc.).
+	</div>
+	<div>
+		Originally the project was conceived to ba a more flexible approach generating structured data for export to third-party tools. After some discussions, the feature set expanded to fully expose the structured data classes to script for general use in-game (envisioned in the context of editors).  
+	</div>
+	<div>
+		The project creates two families of C++ objects: the TSDoc family, and the SysDoc family.
+	</div>
+	<div style="font-size:105%;font-weight:bold;margin-bottom:0px;padding-bottom:0px">TSDoc Objects</div>
+	<div style="margin-top:0px;">
+		The TSDoc objects provide a functional backbone and can serve as a bridge between the Torque engine and third-party applications (code editors, etc). As a transport mechanism, TSDoc objects work within Torque to export console class definition data in consumable (JSON) format. In third-party applications, local TSDoc objects can be generated from engine-formatted JSON data to provide a flexible framework for processing Torque game object defintions.
+	</div>
+	<div style="font-size:105%;font-weight:bold;margin-bottom:0px;padding-bottom:0px">SysDoc Objects</div>
+	<div style="margin-top:0px;">
+		SysDoc objects are a family of Torque console objects that expose TSDoc stuctures and functionality to in-game scripting. SysDoc classes manifest functionality for working in script with object class definitions, usage text, object/field/method group handling, applying/exporting templates, etc.
+	</div>
+	<div style="text-align:center;">
+		<!-- <div class="nlink"><a href="overview.html">&lt;&lt; Overview</a></div> -->
+		<div class="nlink"><a href="index.html">Index</a></div>
+		<div class="nlink"><a href="engine.html">Engine Classes &gt;&gt;</a></div>
+	</div>	
+</div>
+</body>
