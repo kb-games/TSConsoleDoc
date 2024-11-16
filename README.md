@@ -10,7 +10,7 @@ Drop the "game" and "engine" folders into the relevant locations within a local 
 
 The only modification to core game files adds a line to execute the consoleDoc system in " ./tools/main.cs". so it should work as a drop-in resource for any Torque implementation that has not modified this file.<br>
 
-The resource is tested in T3D 3.10 (clean build), but it should work as a drop-in resource for much earlier versions as well.<br>
+The resource is tested in T3D 3.10 (clean build), but it should work for much earlier versions as well.<br>
 
 ### Installation 4x:
 The 4x implementation still has issues. 
