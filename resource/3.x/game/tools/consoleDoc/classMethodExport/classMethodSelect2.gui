@@ -1,0 +1,167 @@
+//--- OBJECT WRITE BEGIN ---
+%guiContent = new GuiControl(ClassMethodSelect) {
+   position = "0 0";
+   extent = "1024 768";
+   minExtent = "8 8";
+   horizSizing = "right";
+   vertSizing = "bottom";
+   profile = "GuiModelessDialogProfile";
+   visible = "1";
+   active = "1";
+   tooltipProfile = "GuiToolTipProfile";
+   hovertime = "1000";
+   isContainer = "1";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      helpTag = "0";
+      noCursor = "1";
+
+   new GuiBitmapBorderCtrl() {
+      position = "433 263";
+      extent = "358 292";
+      minExtent = "8 8";
+      horizSizing = "center";
+      vertSizing = "center";
+      profile = "GuiDefaultProfile";
+      visible = "1";
+      active = "1";
+      tooltipProfile = "GuiToolTipProfile";
+      hovertime = "1000";
+      isContainer = "0";
+      canSave = "1";
+      canSaveDynamicFields = "0";
+
+      new GuiBitmapCtrl() {
+         color = "255 255 255 255";
+         wrap = "0";
+         position = "200 27";
+         extent = "64 64";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+
+		  new GuiTextCtrl() {
+			 text = "Test:";
+			 maxLength = "1024";
+			 margin = "0 0 0 0";
+			 padding = "0 0 0 0";
+			 anchorTop = "1";
+			 anchorBottom = "0";
+			 anchorLeft = "1";
+			 anchorRight = "0";
+			 position = "0 0";
+			 extent = "64 20";
+			 minExtent = "8 2";
+			 horizSizing = "right";
+			 vertSizing = "bottom";
+			 profile = "GuiTextProfile";
+			 visible = "1";
+			 active = "1";
+			 tooltipProfile = "GuiToolTipProfile";
+			 hovertime = "1000";
+			 isContainer = "1";
+			 canSave = "1";
+			 canSaveDynamicFields = "0";
+		  };		 
+      };
+      new GuiBitmapCtrl() {
+         bitmap = "tools/classMethodSelect/hudfill.png";
+         color = "255 255 255 255";
+         wrap = "0";
+         position = "5 27";
+         extent = "147 231";
+         minExtent = "8 8";
+         horizSizing = "right";
+         vertSizing = "bottom";
+         profile = "GuiDefaultProfile";
+         visible = "1";
+         active = "1";
+         tooltipProfile = "GuiToolTipProfile";
+         hovertime = "1000";
+         isContainer = "0";
+         canSave = "1";
+         canSaveDynamicFields = "0";
+
+         new GuiScrollCtrl() {
+            willFirstRespond = "1";
+            hScrollBar = "alwaysOff";
+            vScrollBar = "dynamic";
+            lockHorizScroll = "0";
+            lockVertScroll = "0";
+            constantThumbHeight = "0";
+            childMargin = "0 0";
+            mouseWheelScrollSpeed = "-1";
+            margin = "0 0 0 0";
+            padding = "0 0 0 0";
+            anchorTop = "1";
+            anchorBottom = "0";
+            anchorLeft = "1";
+            anchorRight = "0";
+            position = "0 24";
+            extent = "147 207";
+            minExtent = "8 8";
+            horizSizing = "width";
+            vertSizing = "height";
+            profile = "GuiScrollProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+
+            new GuiTextListCtrl(MethodSelectList) {
+               columns = "0 120";
+               fitParentWidth = "1";
+               clipColumnText = "0";
+               position = "1 1";
+               extent = "145 8";
+               minExtent = "8 8";
+               horizSizing = "width";
+               vertSizing = "height";
+               profile = "GuiDefaultProfile";
+               visible = "1";
+               active = "1";
+               tooltipProfile = "GuiToolTipProfile";
+               hovertime = "1000";
+               isContainer = "1";
+               canSave = "1";
+               canSaveDynamicFields = "0";
+            };
+         };
+         new GuiTextCtrl() {
+            text = "Method List";
+            maxLength = "255";
+            margin = "0 0 0 0";
+            padding = "0 0 0 0";
+            anchorTop = "1";
+            anchorBottom = "0";
+            anchorLeft = "1";
+            anchorRight = "0";
+            position = "37 2";
+            extent = "76 20";
+            minExtent = "8 8";
+            horizSizing = "right";
+            vertSizing = "bottom";
+            profile = "GuiTextProfile";
+            visible = "1";
+            active = "1";
+            tooltipProfile = "GuiToolTipProfile";
+            hovertime = "1000";
+            isContainer = "1";
+            canSave = "1";
+            canSaveDynamicFields = "0";
+         };
+      };
+   };
+};
+//--- OBJECT WRITE END ---
