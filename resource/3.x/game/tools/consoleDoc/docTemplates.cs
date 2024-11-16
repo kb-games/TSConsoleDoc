@@ -1,5 +1,5 @@
 // ============================================================
-// Project            :  Full Game (afx mess)
+// Project            :  Full Game
 // File               :  .\tools\docTemplates.cs
 // Copyright          :  
 // Author             :  Kent Butler
@@ -15,6 +15,10 @@
 //    {{u_desc}}
 //    {{u_formatted}}
 //
+// Classset Macros:
+//    {{this}}
+//    {{classset}}
+//
 // Class Macros:
 //    {{cls_name}}
 //    {{cls_parent}}
@@ -25,6 +29,10 @@
 //    {{cls_lineno}}
 //    {{cls_isscript}}
 //    {{fieldset}}
+//    {{methodset}}
+//
+// Methodset Macros:
+//    {{this}}
 //    {{methodset}}
 //
 // Method Macros:
@@ -55,6 +63,7 @@
 //    {{required}}
 //
 // Fieldset Macros:
+//    {{this}}
 //    {{fieldset}}
 //
 // Field Macros:
